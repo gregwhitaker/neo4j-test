@@ -1,0 +1,21 @@
+repositories {
+    mavenCentral()
+    maven {
+        credentials {
+            username 'admin'
+            password 'password'
+        }
+        url 'http://artifactory.pes.nikecloud.com/artifactory/libs-release'
+    }
+    maven {
+        credentials {
+            username 'admin'
+            password 'password'
+        }
+        url 'http://artifactory.pes.nikecloud.com/artifactory/libs-snapshot'
+    }
+}
+
+dependencies {
+
+}

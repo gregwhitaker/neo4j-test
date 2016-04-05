@@ -1,0 +1,13 @@
+buildscript {
+    apply from: file('gradle/buildscript.gradle'), to: buildscript
+}
+
+apply from: file('gradle/blueprint.gradle')
+
+dependencies {
+    compile 'org.neo4j:neo4j:2.3.2'
+    compile 'org.neo4j:neo4j-kernel:2.3.2'
+    compile 'com.graphaware.neo4j:tests:2.3.2.37'
+    compile 'org.neo4j:neo4j-jdbc:2.3.2'
+    compile 'org.apache.commons:commons-dbcp2:2.1.1'
+}
