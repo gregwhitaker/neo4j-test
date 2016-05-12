@@ -1,5 +1,7 @@
 repositories {
     mavenCentral()
+    maven { url "https://repo.spring.io/snapshot" }
+    maven { url "https://repo.spring.io/milestone" }
     maven {
         credentials {
             username 'admin'
@@ -17,5 +19,5 @@ repositories {
 }
 
 dependencies {
-
+    classpath('io.spring.gradle:dependency-management-plugin:0.5.2.RELEASE')
 }
